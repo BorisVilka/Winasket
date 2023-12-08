@@ -1,0 +1,183 @@
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grad"
+        tools:context=".StartFragment">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/font"
+            android:text="SHOP"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/bombShop"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/bomb_shop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/basketShop"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/basketShop"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:background="@drawable/shop2"
+            android:padding="12dp"
+            android:src="@drawable/basket_shop"
+            app:layout_constraintEnd_toStartOf="@+id/bombShop"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ballShop"
+            app:layout_constraintTop_toTopOf="@+id/bombShop" />
+
+        <ImageView
+            android:id="@+id/ballShop"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:background="@drawable/shop1"
+            android:padding="12dp"
+            android:src="@drawable/ball_shop"
+            app:layout_constraintEnd_toStartOf="@+id/basketShop"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/basketShop" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:background="#FF6A13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/basketShop" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/lock"
+            app:layout_constraintBottom_toTopOf="@+id/bombShop"
+            app:layout_constraintEnd_toEndOf="@+id/bombShop"
+            app:layout_constraintTop_toTopOf="@+id/bombShop" />
+
+        <ImageView
+            android:id="@+id/t1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ball"
+            app:layout_constraintBottom_toTopOf="@+id/t4"
+            app:layout_constraintEnd_toStartOf="@+id/t2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <ImageView
+            android:id="@+id/t4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ball"
+            app:layout_constraintBottom_toTopOf="@+id/t7"
+            app:layout_constraintEnd_toStartOf="@+id/t2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+        <ImageView
+            android:id="@+id/t7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ball"
+            app:layout_constraintBottom_toTopOf="@+id/back"
+            app:layout_constraintEnd_toStartOf="@+id/t2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t4" />
+
+        <ImageView
+            android:id="@+id/t2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ball"
+            app:layout_constraintEnd_toStartOf="@+id/t3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/t1"
+            app:layout_constraintTop_toTopOf="@+id/t1" />
+
+        <ImageView
+            android:id="@+id/t5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ball"
+            app:layout_constraintEnd_toStartOf="@+id/t3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/t1"
+            app:layout_constraintTop_toTopOf="@+id/t4" />
+
+        <ImageView
+            android:id="@+id/t8"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ball"
+            app:layout_constraintEnd_toStartOf="@+id/t3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/t1"
+            app:layout_constraintTop_toTopOf="@+id/t7" />
+
+        <ImageView
+            android:id="@+id/t3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ball"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/t2"
+            app:layout_constraintTop_toTopOf="@+id/t2" />
+
+        <ImageView
+            android:id="@+id/t6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ball"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/t2"
+            app:layout_constraintTop_toTopOf="@+id/t5" />
+
+        <ImageView
+            android:id="@+id/t9"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ball"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/t2"
+            app:layout_constraintTop_toTopOf="@+id/t8" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
